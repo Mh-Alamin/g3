@@ -5,5 +5,255 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins', sans-serif;
 }
+
+/*........................
+.............Header 
+.........................*/
+
+.main-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+.header{
+    width:900px;
+    padding:30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar ul li{
+    display: inline;
+    padding:20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+/*........................
+.............Banner info 
+.........................*/
+
+.info h2{
+    font-size:66px;
+    font-weight: bold;
+    padding-top:20px;
+}
+
+.info p{
+    font-size:14px;
+    color:gray;
+}
+
+
+.info-btn{
+    padding: 20px 25px;
+    background-color: orange;
+    color:white;
+    cursor: pointer;
+    border:none;
+    justify-content: center;
+    border-radius:7px;
+}
+
+.info img{
+    width:800px;
+    margin-top: 20px;
+}
+
+
+.featured{
+    display: flex;
+    margin-top:50px;
+}
+
+.featured-l-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+.featured-r-info{
+    padding:200px 100px;
+}
+
+.featured-r-info h3{
+    font-size: 42px;
+}
+
+
+/*........................
+.............Quick Love Story 
+.........................*/
+
+.main-love-enjoy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.love-enjoy-l-part h2{
+    font-size: 42px;
+    font-weight: bold;
+    border-left: 5px solid;
+    border-color: orange;
+    padding-left: 20px;
+}
+
+.love-enjoy-l-part p{
+   font-size: 14px;
+   color:gray;
+}
+
+.love-enoy-r-thumnails img{
+    width:90%;
+    margin-left: 90px;
+}
+
+.desktop-m-version{
+    padding:40px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+
+/*........................
+.............Featured & Enjoy 
+.........................*/
+
+.fact .fact-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/*........................
+.............Sponsor section 
+.........................*/
+
+.sponsors {
+    text-align: center;
+    padding:50px;
+}
+
+.sponsors .section-title{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.sponsors-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img-container img {
+    width: 165px;
+}
+
+
+/*........................
+.............577px Media Quries
+.........................*/
+
+@media only screen and (max-width:688px)
+    {
+
+    .main-header{
+        padding:30px;
+        flex-direction: column;
+    }    
+    .header{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width:100%;
+    }
+
+    .header h2{
+        margin-left: 50px;
+    }
+
+    .info img{
+        width:100%;
+    }
+
+    .info h2{
+       text-align: center;
+       font-size: 42px;
+       margin-left:20px;
+    }
+
+    .info p{
+        margin-left: 30px;
+    }
+
+    .featured{
+        flex-direction: column;
+    }
+
+    .featured-l-img{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 50px;
+    }
+
+    .main-love-enjoy{
+       flex-direction: column;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+    
+    .sponsors-img-container {
+     
+        flex-direction: column;
+    
+    }
+
+}
+
+
